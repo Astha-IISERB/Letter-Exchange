@@ -59,9 +59,9 @@ function openVault() {
 }
 
 function openLetter(content) {
-    document.getElementById('letter-content').innerHTML = `<pre>${content}</pre>`;
+  document.getElementById('letter-content').innerHTML = `<div class="letter-text">${content}</div>`;
   document.getElementById('letter-viewer').style.display = 'flex';
-  }
+}
 
   function closeLetter() {
     document.getElementById('letter-viewer').style.display = 'none';
