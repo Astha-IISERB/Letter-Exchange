@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>E-Letter Exchange</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="envelope" id="envelope">
+    <img src="envelope.png" alt="Closed Envelope" id="envelope-img" />
+  </div>
+
+  <!-- Modal Overlay + Content -->
+  <div id="modal-overlay" class="modal-overlay">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div>
+        <h2 id="modal-title">Enter the secret key:</h2>
+        <input type="text" id="secret-key">
+      </div>
+
+      <!-- Button Container -->
+      <div class="popup-buttons">
+        <button class="enter-btn" onclick="submitKey()">Enter</button>
+        <button class="close-btn" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+
+    <!-- Vault Modal -->
+  <div id="vault-modal" class="vault-modal">
+    <div class="vault-header">Letter Box</div>
+    <div class="vault-content">
+      <div class="file-icon">17/05/25</div>
+      <div class="file-icon">18/05/25</div>
+      <div class="file-icon">19/05/25</div>
+      <div class="file-icon">20/05/25</div>
+    </div>
+    <button class="close-btn" onclick="document.getElementById('vault-modal').style.display='none'">Close</button>
+  </div>
+
+  <!-- Vault Animation -->
+  <div id="vault-animation" class="vault-animation">
+    <img src="vault-opening.gif" 
+      alt="Vault Opening Animation"
+      style="display: block; 
+            margin: auto; 
+            transform: scale(1.5); 
+            transform-origin: center;"/>
+
+  </div>
+
+  <!-- Letter Viewer -->
+  <div id="letter-viewer" class="letter-viewer">
+    <div class="letter-content" id="letter-content">
+      <p>Lets see how the letter works.</p>
+    </div>
+    <button class="close-letter-btn" onclick="closeLetter()">Close</button>
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
