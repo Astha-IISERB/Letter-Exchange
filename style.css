@@ -154,7 +154,7 @@ body {
   transition: transform 0.2s ease; /* Optional hover animation */
 }
 
-.file-icon {
+.attachment-icon {
   width: 300px;                  /* Adjust based on your image */
   height: 246px;                 /* Adjust to match aspect ratio (e.g., 437x571 ≈ 0.76) */
   background-image: url('attachment-icon.png');
