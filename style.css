@@ -135,7 +135,7 @@ body {
   justify-content: center;
 }
 
-
+.attachement-icon,
 .file-icon {
   width: 300px;                  /* Adjust based on your image */
   height: 246px;                 /* Adjust to match aspect ratio (e.g., 437x571 ≈ 0.76) */
@@ -155,6 +155,7 @@ body {
   transition: transform 0.2s ease; /* Optional hover animation */
 }
 
+.attachment-icon:hover,
 .file-icon:hover {
   transform: scale(1.05); /* Slight zoom effect */
   /* Avoid background-color here to preserve background image */
@@ -263,14 +264,4 @@ body {
   max-height: 90%;
   overflow-y: auto;
   border-radius: 8px;
-}
-
-.attachment-icon {
-  cursor: pointer;
-  background-color: #eef;
-  padding: 10px;
-  margin-top: 10px;
-  border-radius: 5px;
-  text-align: center;
-  font-weight: bold;
 }
