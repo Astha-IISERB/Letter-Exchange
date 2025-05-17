@@ -135,11 +135,29 @@ body {
   justify-content: center;
 }
 
-.attachement-icon,
 .file-icon {
   width: 300px;                  /* Adjust based on your image */
   height: 246px;                 /* Adjust to match aspect ratio (e.g., 437x571 ≈ 0.76) */
   background-image: url('letter-icon.png');
+  background-size: cover;      /* Ensure the full image shows */
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  margin-bottom: 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease; /* Optional hover animation */
+}
+
+.file-icon {
+  width: 300px;                  /* Adjust based on your image */
+  height: 246px;                 /* Adjust to match aspect ratio (e.g., 437x571 ≈ 0.76) */
+  background-image: url('attachment-icon.png');
   background-size: cover;      /* Ensure the full image shows */
   background-position: center;
   background-repeat: no-repeat;
