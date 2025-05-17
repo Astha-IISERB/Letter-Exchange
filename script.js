@@ -81,3 +81,19 @@ const Letters = ['letter1.txt','letter2.txt'];
       }
     });
   });
+
+document.querySelector('.attachment-icon').addEventListener('click', async () => {
+  try {
+    // Simulate loading image/video files — replace with your actual file paths
+    const attachments = ['attach17(1).jpg', 'attach17(2).jpg'];
+    document.getElementById('attachment-content').innerHTML = attachments.join('');
+    document.getElementById('attachment-viewer').style.display = 'flex';
+    } catch (err) {
+    document.getElementById('attachment-content').innerHTML = 'Failed to load attachments.';
+  }
+});
+
+function closeAttachment() {
+  document.getElementById('attachment-viewer').style.display = 'none';
+  document.getElementById('vault-modal').style.display = 'flex'; // Reopen vault
+}
