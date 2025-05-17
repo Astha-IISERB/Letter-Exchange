@@ -81,32 +81,3 @@ const Letters = ['letter1.txt','letter2.txt'];
       }
     });
   });
-
-document.querySelector('.attachment-icon').addEventListener('click', async () => {
-  try {
-    const attachments = ['attach17(1).jpg', 'attach17(2).jpg'];
-    const contentDiv = document.getElementById('attachment-content');
-    contentDiv.innerHTML = ''; // Clear previous content
-
-    // Dynamically create image elements
-    attachments.forEach(file => {
-      const img = document.createElement('img');
-      img.src = file;
-      img.alt = 'Attachment';
-      img.style.maxWidth = '100%';
-      img.style.margin = '10px';
-      contentDiv.appendChild(img);
-    });
-
-    document.getElementById('attachment-viewer').style.display = 'flex';
-  } catch (err) {
-    document.getElementById('attachment-content').innerHTML = 'Failed to load attachments.';
-    console.error('Attachment load error:', err);
-  }
-});
-
-function closeAttachment() {
-  document.getElementById('attachment-viewer').style.display = 'none';
-  document.getElementById('vault-modal').style.display = 'flex'; // Reopen vault
-}
-
