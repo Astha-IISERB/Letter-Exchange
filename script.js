@@ -67,7 +67,7 @@ function openLetter(content) {
     document.getElementById('letter-viewer').style.display = 'none';
   }
 
-const Letters = ['letter1.txt','letter2.txt'];
+const Letters = ['letter1.txt','letter2.txt','letter3.txt'];
 
   // Example binding — you can assign unique content to each file icon
   document.querySelectorAll('.file-icon').forEach((icon, index) => {
